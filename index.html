@@ -1443,6 +1443,76 @@
   </div>
 </section>
 
+<!-- MUSIC PLAYER -->
+<div id="musicPlayer" style="
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--card);
+  border: 1px solid var(--border2);
+  border-radius: 4px;
+  padding: 12px 30px;
+">
+  <button id="musicBtn" style="
+    background: transparent;
+    border: 1px solid var(--border2);
+    color: var(--text3);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  ">▶</button>
+  <div style="display: flex; flex-direction: column; gap: 2px;">
+    <span style="font-family: var(--display); font-size: 12px; font-weight: 700; color: var(--text);">Anxiety</span>
+    <span style="font-family: var(--mono); font-size: 9px; color: var(--text3); letter-spacing: 0.08em;">Rama Low</span>
+  </div>
+  <audio id="bgMusic" loop src="Assets/BackgroundMusic.mp3"></audio>
+</div>
+
+<script>
+  const musicBtn = document.getElementById('musicBtn');
+  const bgMusic  = document.getElementById('bgMusic');
+  let playing = true;
+
+  bgMusic.volume = 0.3;
+  musicBtn.addEventListener('click', () => {
+    if (playing) {
+      bgMusic.pause();
+      musicBtn.textContent = '▶';
+      musicBtn.style.color = 'var(--text3)';
+      musicBtn.style.borderColor = 'var(--border2)';
+    } else {
+      bgMusic.play();
+      musicBtn.textContent = '⏸';
+      musicBtn.style.color = 'var(--accent)';
+      musicBtn.style.borderColor = 'var(--accent)';
+    }
+    playing = !playing;
+  });
+
+  function startMusicOnce() {
+    bgMusic.volume = 0.3;
+    bgMusic.play();
+    musicBtn.textContent = '⏸';
+    musicBtn.style.color = 'var(--accent)';
+    musicBtn.style.borderColor = 'var(--accent)';
+    playing = true;
+
+    window.removeEventListener('click', startMusicOnce);
+  }
+
+  window.addEventListener('click', startMusicOnce);
+</script>
+
 <div class="divider"></div>
 
 <!-- WHAT I DO -->
@@ -1652,7 +1722,7 @@
     <!--OverKill:Reborn-->
     <div class="game-card" style="width: 320px;">
       <div class="game-card-accent"></div>
-      <img class="game-image" src="Images/OverKill.webp" alt="OverKill" loading="lazy">
+      <img class="game-image" src="Assets/OverKill.webp" alt="OverKill" loading="lazy">
       <div class="game-body">
         <div class="game-meta"><span class="role-badge">Lead Developer</span></div>
         <h3 class="game-title">OverKill:Reborn</h3>
