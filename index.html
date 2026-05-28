@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Local | Professional Roblox Scripter</title>
+<title>Kiui | Professional Roblox Scripter</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Outfit:wght@400;500;600;700;800;900&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet" />
@@ -18,8 +18,8 @@
     --card2: #1a1f28;
     --border: #1e2530;
     --border2: #252d3a;
-    --accent: #e8484a;
-    --accent2: #ff6b35;
+    --accent: #71fa32;
+    --accent2: #2bff00;
     --accent3: #ffd166;
     --teal: #4ecdc4;
     --blue: #4a9eff;
@@ -65,6 +65,11 @@
     backdrop-filter: blur(16px);
     border-bottom: 1px solid var(--border);
   }
+
+  .highlight {
+    color: var(--accent2); /* change to any color */
+  }
+
   .nav-logo {
     font-family: var(--mono);
     font-size: 13px;
@@ -114,7 +119,7 @@
     position: absolute;
     top: -200px; right: -150px;
     width: 700px; height: 700px;
-    background: radial-gradient(circle, rgba(232,72,74,0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(85, 232, 72, 0.08) 0%, transparent 70%);
     pointer-events: none;
   }
   .hero-glow2 {
@@ -142,7 +147,7 @@
     letter-spacing: 0.15em;
     text-transform: uppercase;
     color: var(--accent);
-    border: 1px solid rgba(232,72,74,0.3);
+    border: 1px solid rgba(0, 126, 27, 0.753);
     padding: 6px 14px;
     border-radius: 2px;
     margin-bottom: 28px;
@@ -197,9 +202,9 @@
     display: inline-flex;
     align-items: center;
     padding: 8px 14px;
-    border: 1px solid rgba(232,72,74,0.45);
+    border: 1px solid rgba(0, 126, 27, 0.753);
     border-radius: 2px;
-    background: rgba(232,72,74,0.08);
+    background: rgba(8, 65, 0, 0.08);
     min-height: 38px;
     transition: width 260ms ease;
     overflow: hidden;
@@ -282,9 +287,9 @@
     border: none;
   }
   .btn-primary { background: var(--accent); color: #fff; }
-  .btn-primary:hover { background: #c93a3c; transform: translateY(-1px); }
+  .btn-primary:hover { background: #018116; transform: translateY(-1px); transform: scale(1.1);}
   .btn-secondary { background: transparent; color: var(--text2); border: 1px solid var(--border2); }
-  .btn-secondary:hover { border-color: var(--text3); color: var(--text); }
+  .btn-secondary:hover { border-color: var(--text3); color: var(--text); transform: scale(1.1);}
 
   /* SECTIONS */
   section { padding: 100px 48px; }
@@ -481,6 +486,7 @@
     gap: 20px;
     margin-bottom: 40px;
   }
+
   .game-card {
     background: var(--card);
     border: 1px solid var(--border);
@@ -508,9 +514,9 @@
     font-weight: 700;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    background: rgba(232,72,74,0.12);
+    background: rgba(0, 160, 0, 0.75);
     color: var(--accent);
-    border: 1px solid rgba(232,72,74,0.25);
+    border: 1px solid rgba(0, 80, 0, 0.5);
     padding: 3px 9px;
     border-radius: 2px;
   }
@@ -618,9 +624,9 @@
     margin-bottom: 8px;
   }
   .mini-role-badge.head {
-    background: rgba(232,72,74,0.1);
+    background: rgba(0, 160, 0, 0.75);
     color: var(--accent);
-    border: 1px solid rgba(232,72,74,0.2);
+    border: 1px solid rgba(0, 80, 0, 0.5);
   }
   .mini-role-badge.assist {
     background: rgba(74,158,255,0.1);
@@ -740,8 +746,8 @@
   .price-tier { background: var(--card); padding: 28px 22px; transition: background 0.2s; position: relative; }
   .price-tier:hover { background: var(--card2); }
   .tier-num { font-family: var(--mono); font-size: 9px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text3); margin-bottom: 12px; }
-  .tier-name { font-family: var(--display); font-size: 16px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
-  .tier-price { font-family: var(--mono); font-size: 20px; color: var(--accent); font-weight: 700; margin-bottom: 12px; letter-spacing: -0.02em; }
+  .tier-name { font-family: var(--display); font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+  .tier-price { font-family: var(--mono); font-size: 15px; color: var(--accent); font-weight: 700; margin-bottom: 12px; letter-spacing: -0.02em; }
   .tier-desc { font-size: 12px; color: var(--text2); line-height: 1.55; margin-bottom: 12px; font-weight: 400; }
   .tier-examples { font-size: 11px; color: var(--text2); font-style: italic; line-height: 1.55; border-top: 1px solid var(--border); padding-top: 10px; font-weight: 400; }
   .popular-tag {
@@ -776,8 +782,8 @@
   .payment-block li strong { color: var(--text); font-weight: 600; }
 
   .notice-bar {
-    background: rgba(232,72,74,0.07);
-    border: 1px solid rgba(232,72,74,0.2);
+    background: rgba(0,80,0,0.5);
+    border: 1px solid rgba(0,160,0,0.75);
     border-radius: 4px;
     padding: 14px 20px;
     font-family: var(--mono);
@@ -1063,12 +1069,286 @@
     .steps { grid-template-columns: 1fr; }
     .hero-stats { gap: 24px; }
   }
+
+.proj-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.proj-layout.panel-open {
+  grid-template-columns: 1fr 420px;
+}
+
+.proj-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.proj-row {
+  background: var(--card);
+  padding: 22px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.18s, border-left-color 0.18s;
+  border-left: 3px solid transparent;
+  user-select: none;
+}
+
+.proj-row:hover {
+  background: var(--card2);
+}
+
+.proj-row.active {
+  background: var(--card2);
+  border-left-color: var(--accent);
+}
+
+.proj-row-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  min-width: 0;
+}
+
+.proj-num {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text3);
+  letter-spacing: 0.12em;
+  flex-shrink: 0;
+}
+
+.proj-title {
+  font-family: var(--display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.proj-sub {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text3);
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.proj-row-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.proj-badge {
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 3px 9px;
+  border-radius: 2px;
+}
+
+.proj-badge.head {
+  background: rgba(0,160,0,.75);
+  color: var(--accent);
+  border: 1px solid rgba(0,80,0,.5);
+}
+
+.proj-badge.assist {
+  background: rgba(74,158,255,.1);
+  color: var(--blue);
+  border: 1px solid rgba(74,158,255,.2);
+}
+
+.proj-badge.fix {
+  background: rgba(255,209,102,.1);
+  color: var(--accent3);
+  border: 1px solid rgba(255,209,102,.2);
+}
+
+.proj-badge.gameplay {
+  background: rgba(76,216,160,.1);
+  color: var(--teal);
+  border: 1px solid rgba(76,216,160,.2);
+}
+
+.proj-play-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid var(--border2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  color: var(--text3);
+  transition: border-color 0.18s, color 0.18s, background 0.18s;
+  flex-shrink: 0;
+}
+
+.proj-row:hover .proj-play-btn,
+.proj-row.active .proj-play-btn {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: rgba(0,160,0,.08);
+}
+
+.proj-video-panel {
+  display: none;
+  position: sticky;
+  top: 88px;
+}
+
+.proj-layout.panel-open .proj-video-panel {
+  display: block;
+}
+
+.proj-video-inner {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  animation: panelIn 0.25s ease;
+}
+
+@keyframes panelIn {
+  from { opacity: 0; transform: translateX(12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.proj-video-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+.proj-video-title {
+  font-family: var(--display);
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.2;
+  margin-bottom: 5px;
+}
+
+.proj-video-meta {
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--text3);
+  letter-spacing: 0.08em;
+}
+
+.proj-close-btn {
+  background: transparent;
+  border: 1px solid var(--border2);
+  color: var(--text3);
+  border-radius: 2px;
+  width: 28px;
+  height: 28px;
+  font-size: 12px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: border-color 0.15s, color 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proj-close-btn:hover {
+  border-color: var(--text3);
+  color: var(--text);
+}
+
+.proj-iframe-wrap {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  background: var(--bg3);
+}
+
+.proj-iframe-wrap iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+.proj-video-note {
+  font-size: 13px;
+  color: var(--text2);
+  line-height: 1.65;
+  padding: 16px 20px;
+  border-top: 1px solid var(--border);
+  font-weight: 400;
+}
+
+.proj-video-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 20px 18px;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--blue);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.proj-video-link::after { content: '↗'; }
+.proj-video-link:hover  { color: var(--text); }
+
+/* ── RESPONSIVE ──────────────────────── */
+@media (max-width: 860px) {
+  .proj-layout.panel-open {
+    grid-template-columns: 1fr;         /* stack again on mobile */
+  }
+
+  .proj-video-panel {
+    position: static;
+  }
+}
+
+@media (max-width: 480px) {
+  .proj-badge { display: none; }        /* save space on very small screens */
+}
+
 </style>
 </head>
 <body>
 
 <nav>
-  <div class="nav-logo">devlocal</div>
+  <div class="nav-logo">it2Kiui</div>
   <ul class="nav-links">
     <li><a href="#about">About Me</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -1085,28 +1365,30 @@
   <div class="hero-glow2"></div>
   <div class="hero-inner">
     <div class="hero-tag">Professional Roblox Scripter For Hire</div>
-    <h1>Local<span class="accent-dot">.</span></h1>
+    <h1>Kiui<span class="accent-dot">.</span></h1>
 
     <div class="hero-rotator-wrap">
       <span class="rotator-label">Building</span>
       <span class="rotator-shell" id="rotator-shell">
-        <span class="rotator-text" id="rotator-text">full game frameworks</span>
-        <span class="rotator-measure" id="rotator-measure">full game frameworks</span>
+        <span class="rotator-text" id="rotator-text">Full games Frameworks</span>
+        <span class="rotator-measure" id="rotator-measure">Full games Frameworks</span>
       </span>
     </div>
 
     <p class="hero-sub">
-      Hey! I'm Local. I am an <strong>advanced &amp; professional</strong> Roblox scripter with <strong>5 years</strong> of experience (I started scripting in 2021). I am a <strong>full-stack</strong> scripter (expertise in both frontend &amp; backend) specializing in professional-grade scripting.
+      Hey! I'm Kiui. I am an <strong>advanced &amp; professional</strong> Roblox scripter with <strong>3 and a half years</strong> of experience I am a <strong>full-stack</strong> scripter (expertise in <strong>backend</strong>)
     </p>
     <div class="hero-stats">
       <div class="stat">
-        <span class="stat-val">5 yrs</span>
+        <span class="stat-val">3.5 yrs</span>
         <span class="stat-label">Experience</span>
       </div>
+      <!--
       <div class="stat">
         <span class="stat-val">2.5K+</span>
         <span class="stat-label">Peak CCU</span>
       </div>
+      -->
       <div class="stat">
         <span class="stat-val">Full-Stack</span>
         <span class="stat-label">Frontend + Backend</span>
@@ -1163,71 +1445,11 @@
 
 <div class="divider"></div>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="skills-wrap">
-    <p class="section-label">Luau Expertise</p>
-    <h2 class="section-title">Mastered Skills</h2>
-    <div class="skills-grid fade-in">
-      <div class="skill-item">
-        <span class="skill-icon">🏗️</span>
-        <h3>Core Architecture</h3>
-        <p>Modular, OOP-based frameworks designed for scalability and maintainability. Frameworks designed to handle massive &amp; complex codebases.</p>
-      </div>
-      <div class="skill-item">
-        <span class="skill-icon">💾</span>
-        <h3>Data Handling</h3>
-        <p>ProfileStore and <strong>Custom-made datastore wrappers</strong> with server authority and proper session locking to prevent data loss.</p>
-      </div>
-      <div class="skill-item">
-        <span class="skill-icon">🛡️</span>
-        <h3>Security &amp; Anti-Exploit</h3>
-        <p>Every critical action owned on the server. Client never trusted, effective validation, RemoteEvents sanitized, rate-limited, and rejected when it doesn't make sense. <strong>No exploitable surface, 0 client trust.</strong></p>
-      </div>
-      <div class="skill-item">
-        <span class="skill-icon">⚡</span>
-        <h3>Performance</h3>
-        <p>Best &amp; most efficient, modern practices, profiler-guided optimization. High frame rates under load, low NetworkPing, and no unnecessary replication.</p>
-      </div>
-      <div class="skill-item">
-        <span class="skill-icon">🎨</span>
-        <h3>UI/UX Systems</h3>
-        <p>Clean, responsive GUIs with polished &amp; robust tween behavior. High-quality UI animations that feel like they belong, not bolted on.</p>
-      </div>
-      <div class="skill-item">
-        <span class="skill-icon">🔗</span>
-        <h3>Networking</h3>
-        <p>Clear client/server boundaries. Efficient RemoteEvent and RemoteFunction pipelines where each side owns exactly what it should.</p>
-      </div>
-      <div class="skill-item">
-        <span class="skill-icon">💰</span>
-        <h3>Monetization</h3>
-        <p>DevProducts, Gamepasses, and receipt handlers wired correctly; purchase flows tied to actual game economy logic.</p>
-      </div>
-      <div class="skill-item">
-        <span class="skill-icon">♟️</span>
-        <h3>Systems Design</h3>
-        <p>Gameplay loops and progression systems built around long-term retention, not just the initial launch rush.</p>
-      </div>
-      <div class="skill-item">
-        <span class="skill-icon">🔍</span>
-        <h3>Debugging &amp; Reliability</h3>
-        <p>Edge cases caught before they ship. Complex bugs traced to their root cause, not papered over with workarounds.</p>
-      </div>
-    </div>
-    <div class="skills-note fade-in">
-      Whether I'm scripting from scratch or continuing someone else's work, the approach stays the same. The standards stay high, the process doesn't change, and the work gets done right.
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
 <!-- WHAT I DO -->
-<section id="services">
+<section id="skills">
   <div class="services-wrap">
-    <p class="section-label">What I Do</p>
-    <h2 class="section-title">Full range, zero limits.</h2>
+    <p class="section-label">Lua expertise</p>
+    <h2 class="section-title">Skills.</h2>
     <p class="services-intro">
       I am able to do anything ranging from <strong>small tasks</strong> to <strong>full games</strong>. I am comfortably able to work on almost all types of systems. Here are some examples (but not limited to):
     </p>
@@ -1299,125 +1521,152 @@
 <section id="portfolio">
   <div class="portfolio-wrap">
     <p class="section-label">Portfolio</p>
-    <h2 class="section-title">Games I've shipped.</h2>
-    <div class="games-grid fade-in">
+    <h2 class="section-title">
+      Projects I've <span class="highlight">done</span>.
+    </h2>
 
-      <div class="game-card">
-        <div class="game-card-accent teal"></div>
-        <img class="game-image" src="Images/MowUrSnow.webp" alt="Mow Ur Snow! ❄️ icon" loading="lazy">
-        <div class="game-body">
-          <div class="game-meta"><span class="role-badge">Head Scripter</span></div>
-          <h3 class="game-title">Mow Ur Snow! ❄️</h3>
-          <div class="game-stats">
-            <span class="gstat"><span class="gstat-icon">⭐</span> 1.2M Visits</span>
-            <span class="gstat"><span class="gstat-icon">🔥</span> 1.5K+ Peak CCU</span>
+    <div class="proj-layout">
+
+      <!-- ── LIST ── -->
+      <div class="proj-list fade-in" id="projList">
+        <!--Cobul V1.0.0-->
+        <div class="proj-row active"
+             data-yt="0SEV1HH3vLA"
+             data-title="Cobul V1.0.0"
+             data-meta="Configurable · Modularised · Ready-To-Use"
+             data-note="A full roblox interpeted progamming language made for an upcoming project, made solely by me">
+          <div class="proj-row-left">
+            <span class="proj-num">01</span>
+            <div>
+              <div class="proj-title">Cobul</div>
+              <div class="proj-sub">Roblox Interpeted Progamming Language</div>
+            </div>
           </div>
-          <div class="game-note"><span class="note-star">☆</span> Fun fact: The game's codebase used to be incredibly messy. I transformed the codebase from messy roughwork into a professional-grade codebase. Modular, server-authoritative, performance optimized.</div>
-          <a href="https://www.roblox.com/games/134354795189883/Mow-Ur-Snow" target="_blank" class="game-link">View on Roblox</a>
+          <div class="proj-row-right">
+            <span class="proj-badge head">Founder</span>
+            <span class="proj-play-btn" aria-label="Watch video">▶</span>
+          </div>
         </div>
+
+        <!--Divider Showcase-->
+        <div class="proj-row active"
+             data-yt="0d2DptPLpJ8"
+             data-title="Divider Showcase"
+             data-meta="Easy-To-Use"
+             data-note="Modularised script for cutting parts in a ratio, good for making (cutting systems, voxel destruction)">
+          <div class="proj-row-left">
+            <span class="proj-num">02</span>
+            <div>
+              <div class="proj-title">Divider Showcase</div>
+              <div class="proj-sub">Script For Cutting Parts In Ratio</div>
+            </div>
+          </div>
+          <div class="proj-row-right">
+            <span class="proj-badge head">Founder</span>
+            <span class="proj-play-btn" aria-label="Watch video">▶</span>
+          </div>
+        </div>
+
+        <!--A* PathFinding-->
+        <div class="proj-row active"
+             data-yt="BonzwU42xKQ"
+             data-title="A* PathFinding"
+             data-meta="Easy-To-Use"
+             data-note="A* path-finding algorithm, good for making (Complex PathFinding)">
+          <div class="proj-row-left">
+            <span class="proj-num">03</span>
+            <div>
+              <div class="proj-title">A* PathFinding</div>
+              <div class="proj-sub">A* PathFinding Algorithm</div>
+            </div>
+          </div>
+          <div class="proj-row-right">
+            <span class="proj-badge head">Founder</span>
+            <span class="proj-play-btn" aria-label="Watch video">▶</span>
+          </div>
+        </div>
+
+        <!--Pet System-->
+        <!--https://youtu.be/pzY2F5O6i7k-->
+        <div class="proj-row active"
+             data-yt="BonzwU42xKQ"
+             data-title="Pet System"
+             data-meta="Ready-To-Use"
+             data-note='Pet System Similar to ("Pet Sim-99", "Pet Simulator"), credits to "x.com/@gvesster" for the UI icons'>
+          <div class="proj-row-left">
+            <span class="proj-num">04</span>
+            <div>
+              <div class="proj-title">Pet System</div>
+              <div class="proj-sub"><strong>Global</strong> Pet System</div>
+            </div>
+          </div>
+          <div class="proj-row-right">
+            <span class="proj-badge head">Founder</span>
+            <span class="proj-play-btn" aria-label="Watch video">▶</span>
+          </div>
+        </div>
+
       </div>
 
-      <div class="game-card">
-        <div class="game-card-accent"></div>
-        <img class="game-image" src="Images/NoMoreSchool.webp" alt="NO MORE SCHOOL icon" loading="lazy">
-        <div class="game-body">
-          <div class="game-meta"><span class="role-badge">Head Scripter</span></div>
-          <h3 class="game-title featured">NO MORE SCHOOL</h3>
-          <div class="game-stats">
-            <span class="gstat"><span class="gstat-icon">⭐</span> 5M Visits</span>
-            <span class="gstat"><span class="gstat-icon">🔥</span> 2.5K+ Peak CCU</span>
-          </div>
-          <div class="game-note"><span class="note-star">☆</span> Fun fact: I shipped a significant update within 3 days of being hired. I worked through a bloated codebase to ship a huge, polished update which helped the game reach it's peak CCU of 2.5K with high satisfaction.</div>
-          <a href="https://www.roblox.com/games/103323281597335/NO-MORE-SCHOOL" target="_blank" class="game-link">View on Roblox</a>
-        </div>
-      </div>
+      <!-- ── VIDEO PANEL ── -->
+      <div class="proj-video-panel" id="projVideoPanel">
+        <div class="proj-video-inner">
 
-      <div class="game-card">
-        <div class="game-card-accent gold"></div>
-        <img class="game-image" src="Images/MinerArmy.webp" alt="⛏️ Miner Army! icon" loading="lazy">
-        <div class="game-body">
-          <div class="game-meta"><span class="role-badge">Head Scripter</span></div>
-          <h3 class="game-title">⛏️ Miner Army!</h3>
-          <div class="game-stats">
-            <span class="gstat"><span class="gstat-icon">⭐</span> 100K Visits</span>
-            <span class="gstat"><span class="gstat-icon">🔥</span> 300+ Peak CCU</span>
+          <div class="proj-video-header">
+            <div>
+              <div class="proj-video-title" id="pvTitle">Mow Ur Snow! ❄️</div>
+              <div class="proj-video-meta" id="pvMeta">Head Scripter · 1.2M Visits · 1.5K+ Peak CCU</div>
+            </div>
+            <button class="proj-close-btn" id="projCloseBtn" aria-label="Close video">✕</button>
           </div>
-          <div class="game-note"><span class="note-star">☆</span> Fun fact: I navigated through this game's messy codebase to transform it into a professional-grade codebase WHILE actively incorporating updates while live.</div>
-          <a href="https://www.roblox.com/games/125718366148964/Miner-Army" target="_blank" class="game-link">View on Roblox</a>
+
+          <div class="proj-iframe-wrap">
+            <iframe
+              id="projIframe"
+              src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?autoplay=1&rel=0&modestbranding=1"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              loading="lazy"
+              title="Project video">
+            </iframe>
+          </div>
+
+          <div class="proj-video-note" id="pvNote">
+            Transformed a messy codebase into a professional, modular, server-authoritative, performance-optimised system.
+          </div>
+
+          <a class="proj-video-link" id="pvLink" href="https://www.roblox.com/games/134354795189883/Mow-Ur-Snow" target="_blank">
+            View on Roblox
+          </a>
+
         </div>
       </div>
 
     </div>
+  </div>
 
-    <div class="more-games-label fade-in">More Games</div>
-    <div class="more-games-grid fade-in">
-      <a href="https://www.roblox.com/games/76194768511184/Avoid-Trains-For-Eggs" target="_blank" class="mini-game-card">
-        <img class="mini-game-image" src="Images/AvoidTrainsForEggs.webp" alt="Avoid Trains For Eggs! icon" loading="lazy">
-        <div class="mini-game-info">
-          <span class="mini-role-badge head">Head Scripter</span>
-          <div class="mini-game-title">Avoid Trains For Eggs!</div>
-          <div class="mini-game-note">Scripted the full game from scratch under a tight deadline.</div>
+  <p style="text-align: center; color: var(--text); font-family:cursive; font-size: 30px; margin-top: 32px;">More Soon With you 😉.</p>
+  
+  <p class="section-label">Past Games.</p>
+  <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+
+    <!--OverKill:Reborn-->
+    <div class="game-card" style="width: 320px;">
+      <div class="game-card-accent"></div>
+      <img class="game-image" src="Images/OverKill.webp" alt="OverKill" loading="lazy">
+      <div class="game-body">
+        <div class="game-meta"><span class="role-badge">Lead Developer</span></div>
+        <h3 class="game-title">OverKill:Reborn</h3>
+        <div class="game-stats">
+          <span class="gstat"><span class="gstat-icon">⭐</span> 1k Visits</span>
+          <!--<span class="gstat"><span class="gstat-icon">🔥</span> 30k Peak CCU</span>-->
         </div>
-      </a>
-      <a href="https://www.roblox.com/games/113317945633040/Swing-Obby-for-Brainrot-Eggs" target="_blank" class="mini-game-card">
-        <img class="mini-game-image" src="Images/SwingObbyForBrainrotEggs.webp" alt="Swing Obby For Brainrot Eggs! icon" loading="lazy">
-        <div class="mini-game-info">
-          <span class="mini-role-badge assist">Assistant Scripter</span>
-          <div class="mini-game-title">Swing Obby For Brainrot Eggs!</div>
-          <div class="mini-game-note">Improved security and performance due to exploiters and low-end devices.</div>
-        </div>
-      </a>
-      <a href="https://www.roblox.com/games/112437468779514/Fling-Tower" target="_blank" class="mini-game-card">
-        <img class="mini-game-image" src="Images/FlingTower.webp" alt="Fling Tower [TROLL] icon" loading="lazy">
-        <div class="mini-game-info">
-          <span class="mini-role-badge head">Head Scripter</span>
-          <div class="mini-game-title">Fling Tower [TROLL]</div>
-          <div class="mini-game-note">Scripted the full game and integrated fast updates.</div>
-        </div>
-      </a>
-      <a href="https://www.roblox.com/games/115656072207322/Color-Bridges" target="_blank" class="mini-game-card">
-        <img class="mini-game-image" src="Images/ColorBridges.webp" alt="Color Bridges 🌈 icon" loading="lazy">
-        <div class="mini-game-info">
-          <span class="mini-role-badge head">Head Scripter</span>
-          <div class="mini-game-title">Color Bridges 🌈</div>
-          <div class="mini-game-note">Scripted the full game within a day.</div>
-        </div>
-      </a>
-      <a href="https://www.roblox.com/games/82509271555958/Compton-Life-REMASTERED" target="_blank" class="mini-game-card">
-        <img class="mini-game-image" src="Images/ComptonLifeREMASTERED.webp" alt="Compton Life REMASTERED icon" loading="lazy">
-        <div class="mini-game-info">
-          <span class="mini-role-badge fix">Bug Fixer</span>
-          <div class="mini-game-title">Compton Life REMASTERED</div>
-          <div class="mini-game-note">Fixed a complex bug before release.</div>
-        </div>
-      </a>
-      <a href="https://www.roblox.com/games/73699023542441/Button-Trees" target="_blank" class="mini-game-card">
-        <img class="mini-game-image" src="Images/ButtonTrees.webp" alt="Button Trees! 🌳 icon" loading="lazy">
-        <div class="mini-game-info">
-          <span class="mini-role-badge head">Head Scripter</span>
-          <div class="mini-game-title">Button Trees! 🌳</div>
-          <div class="mini-game-note">Solved a complex data loss issue with a custom datastore wrapper.</div>
-        </div>
-      </a>
-      <a href="https://www.roblox.com/games/103924653201062/Curzys-Incremental" target="_blank" class="mini-game-card">
-        <img class="mini-game-image" src="Images/CurzysIncremental.webp" alt="Curzy's Incremental! 🤑 icon" loading="lazy">
-        <div class="mini-game-info">
-          <span class="mini-role-badge head">Head Scripter</span>
-          <div class="mini-game-title">Curzy's Incremental! 🤑</div>
-          <div class="mini-game-note">Improved the UI animations and polish.</div>
-        </div>
-      </a>
-      <a href="https://www.roblox.com/games/103884408720920/One-Punch-Troll-Tower" target="_blank" class="mini-game-card">
-        <img class="mini-game-image" src="Images/OnePunchTrollTower.webp" alt="One Punch Troll Tower 👊 icon" loading="lazy">
-        <div class="mini-game-info">
-          <span class="mini-role-badge gameplay">Gameplay Scripter</span>
-          <div class="mini-game-title">One Punch Troll Tower 👊</div>
-          <div class="mini-game-note">Fixed complex bugs &amp; integrated new features under a tight deadline.</div>
-        </div>
-      </a>
+        <div class="game-note"><span class="note-star">☆</span> I made alot of the major mechanics. e.g (Clan System, Match Making)</div>
+      </div>
     </div>
 
   </div>
+
 </section>
 
 <div class="divider"></div>
@@ -1431,23 +1680,26 @@
     <div class="steps fade-in">
       <div class="step">
         <div class="step-num">01</div>
-        <h3>Scope Review</h3>
-        <p>Requirements, constraints, and technical risks mapped out before a single line is written. I ensure there are <strong>no ambiguities or confusions</strong> before I start.</p>
+        <h3>Prototyping</h3>
+        <p>Requirements, limitations, and technical risks are carefully planned before development begins. Every detail is clarified early to eliminate uncertainty and prevent issues later on.</p>
       </div>
+
       <div class="step">
         <div class="step-num">02</div>
-        <h3>System Build</h3>
-        <p>Begin writing the scripts. Architecture is decided at the start and held to throughout. <strong>The foundation doesn't get compromised mid-project.</strong></p>
+        <h3>System Testing</h3>
+        <p>Development starts with a clear architecture and structured workflow. The core foundation is designed to remain stable and consistent throughout the entire project.</p>
       </div>
+
       <div class="step">
         <div class="step-num">03</div>
         <h3>Validation</h3>
-        <p>Bug testing, edge case coverage, performance checks, and reliability testing <strong>before anything ships.</strong></p>
+        <p>Extensive testing is performed to ensure reliability, performance, and stability. Edge cases and potential issues are resolved before release.</p>
       </div>
+
       <div class="step">
         <div class="step-num">04</div>
         <h3>Delivery</h3>
-        <p>Scripts are complete and ready to be used in-game.</p>
+        <p>The final product is optimized, polished, and fully prepared for seamless in-game implementation and use.</p>
       </div>
     </div>
 
@@ -1455,18 +1707,18 @@
       <p class="section-label" style="margin-top:48px;">Tooling</p>
       <p style="color:var(--text2);margin-bottom:20px;font-size:14px;font-weight:400;">I use various industry-standard development tools such as:</p>
       <div class="tooling-grid">
-        <span class="tool-chip">Knit &amp; Aero Frameworks</span>
-        <span class="tool-chip">Rojo / Azul / Script Sync</span>
+        <span class="tool-chip">Knit Frameworks</span>
+        <span class="tool-chip">Rojo</span>
         <span class="tool-chip">VS Code Workflow</span>
+        <span class="tool-chip">My Own Network and Data Packages</span>
         <span class="tool-chip">Git Version Control</span>
-        <span class="tool-chip">Telemetry &amp; Funnels</span>
         <span class="tool-chip">Script Performance Tooling</span>
       </div>
     </div>
 
     <div class="ai-note fade-in">
       <div class="ai-note-label">AI Note</div>
-      <p>Recently, AI has been improving &amp; getting more involved in scripting workflows. Some scripters completely stay away, some use it too much. I use AI as a <strong>supporting tool</strong>, not a core part of the development process. It mainly helps with things like bug finding, feedback, and boilerplate patches in my VSC workflow. The actual architecture and core logic is always <strong>fully driven by me</strong>. I do not trust raw AI output and always review & improve before shipping. This <strong>speeds up development</strong> (getting the less critical logic in faster) and improves efficiency <strong>without dropping code quality</strong>. HOWEVER, if you would not like me to use AI at all, I will respect it and stick fully to human debugging &amp; writing; just make sure to let me know in advance.</p>
+      <p>Recently, AI has been improving &amp; getting more involved in scripting workflows. Some scripters completely stay away, some use it too much. I use AI as a <strong>supporting tool</strong>, not a core part of the development process. It mainly helps with the <strong>front-end</strong>, <strong>feedback</strong>, The actual architecture and core logic is always <strong>fully driven by me</strong>. I do not trust raw AI output and always review & improve before shipping. This <strong>speeds up development</strong> (getting the less critical logic in faster) and improves efficiency <strong>without dropping code quality</strong>. HOWEVER, if you would not like me to use AI at all, I will respect it and stick fully to human debugging &amp; writing; just make sure to let me know in advance.</p>
     </div>
   </div>
 </section>
@@ -1483,36 +1735,36 @@
       <div class="price-tier">
         <div class="tier-num">Tier 01</div>
         <div class="tier-name">Small Tasks</div>
-        <div class="tier-price">$10–$20</div>
+        <div class="tier-price">⏣250–⏣1,500</div>
         <div class="tier-desc">Simple scripts, minor bug fixes, small standalone mechanics.</div>
         <div class="tier-examples">e.g. fixing minor broken scripts, tweaking UI behavior, adding a small mechanic.</div>
       </div>
       <div class="price-tier">
         <div class="tier-num">Tier 02</div>
         <div class="tier-name">Gameplay Features</div>
-        <div class="tier-price">$25–$50</div>
+        <div class="tier-price">⏣2,750–⏣5,500</div>
         <div class="tier-desc">Standalone gameplay mechanics or feature implementations with moderate complexity.</div>
         <div class="tier-examples">e.g. daily rewards system, a UI feature, expanding an existing system.</div>
       </div>
       <div class="price-tier">
         <div class="tier-num">Tier 03</div>
+        <div class="popular-tag">Popular</div>
         <div class="tier-name">Advanced Systems</div>
-        <div class="tier-price">$75–$200</div>
+        <div class="tier-price">⏣8,250–⏣22,000</div>
         <div class="tier-desc">Multi-component systems requiring structured architecture and proper networking.</div>
         <div class="tier-examples">e.g. full inventory system, saving system, progression system.</div>
       </div>
       <div class="price-tier">
         <div class="tier-num">Tier 04</div>
         <div class="tier-name">Major Game Systems</div>
-        <div class="tier-price">$250–$500</div>
+        <div class="tier-price">⏣27,500–⏣55,000</div>
         <div class="tier-desc">Large-scale systems that power a major portion of the gameplay.</div>
         <div class="tier-examples">e.g. full economy system, core gameplay loop, complete UI framework.</div>
       </div>
       <div class="price-tier">
         <div class="tier-num">Tier 05</div>
-        <div class="popular-tag">Popular</div>
         <div class="tier-name">Full Game Development</div>
-        <div class="tier-price">$500–$1,000+</div>
+        <div class="tier-price">⏣55,000–⏣110,000+</div>
         <div class="tier-desc">Complete game scripting from the ground up, or large-scale production projects.</div>
         <div class="tier-examples">e.g. full simulator, RPG game, physics game, etc; the whole package.</div>
       </div>
@@ -1535,8 +1787,7 @@
       <div class="payment-block">
         <h4>Accepted Methods</h4>
         <ul>
-          <li><div><strong>Robux</strong> — $1 USD = 150 R$</div></li>
-          <li><div><strong>PayPal</strong> — G&amp;S or F&amp;F</div></li>
+          <li><div><strong>Robux</strong> — $1 USD = 110 R$</div></li>
           <li><div><strong>Roblox Gift Cards</strong> — require additional verification before being accepted</div></li>
         </ul>
       </div>
@@ -1573,16 +1824,18 @@
     <h2 class="section-title">What clients say.</h2>
     <div class="testi-grid fade-in">
       <div class="testi-card">
-        <p class="testi-text">i worked with Local for scripting a pet sim game. results were super great. great to work with, and overall hes my top pick</p>
-        <div class="testi-name">— <span>zedi</span></div>
+        <p class="testi-text">youre the goat:)</p>
+        <div class="testi-name">— <span>yosnowww</span></div>
       </div>
+
       <div class="testi-card">
-        <p class="testi-text">Very good scripter. He coded my car racing game. It was super fun so huge props to Local</p>
-        <div class="testi-name">— <span>Dev ZACH</span></div>
+        <p class="testi-text">omg i love yyou kiui</p>
+        <div class="testi-name">— <span>highqualityimage</span></div>
       </div>
+
       <div class="testi-card">
-        <p class="testi-text">I worked with local, and hes the most technically skilled person I know. Was great to work on a game with him overall, would definitely recommend.</p>
-        <div class="testi-name">— <span>DevKruzy</span></div>
+        <p class="testi-text">i am gonna hire you😛</p>
+        <div class="testi-name">— <span>you</span></div>
       </div>
     </div>
   </div>
@@ -1596,40 +1849,34 @@
     <p class="section-label">Find Me</p>
     <h2 class="section-title">Links &amp; profiles.</h2>
     <div class="links-grid fade-in">
-      <a href="https://github.com/devlocalroblox/Scripts" target="_blank" class="link-card">
+      <a href="https://github.com/it2Kiui" target="_blank" class="link-card">
         <span class="link-icon">💻</span>
         <div class="link-text">
           <span class="link-name">GitHub</span>
-          <span class="link-url">github.com/devlocalroblox</span>
+          <span class="link-url">github.com/it2Kiui</span>
         </div>
       </a>
-      <a href="https://www.youtube.com/@DevLocalRoblox" target="_blank" class="link-card">
+      <a href="https://www.youtube.com/@it2Kiui" target="_blank" class="link-card">
         <span class="link-icon">▶️</span>
         <div class="link-text">
           <span class="link-name">YouTube</span>
-          <span class="link-url">@DevLocalRoblox</span>
+          <span class="link-url">youtube/@it2Kiui</span>
         </div>
       </a>
-      <div class="link-card" style="cursor:default;">
+      <a href="https://discordapp.com/users/1279352052706967593/" target="_blank" class="link-card">
         <span class="link-icon">💬</span>
         <div class="link-text">
           <span class="link-name">Discord</span>
-          <span class="link-url">@o1et</span>
+          <span class="link-url">discord/@it2Kiui</span>
         </div>
-      </div>
-      <div class="link-card" style="cursor:default;">
+      </a>
+      <a href="https://www.roblox.com/users/3296703464/profile" target="_blank" class="link-card">
         <span class="link-icon">🎮</span>
         <div class="link-text">
           <span class="link-name">Roblox</span>
-          <span class="link-url">@imdevlocal</span>
+          <span class="link-url">roblox/@it2Kiui</span>
         </div>
-      </div>
-    </div>
-    <div class="github-note fade-in">
-      My GitHub contains full example script files of real scripts I've made. Scripts I make for clients (commissions, live games, etc) is protected and private, so all scripts under here are for personal projects, but that doesn't stop them from showcasing my scripting skill.
-    </div>
-    <div class="yt-note fade-in" style="margin-top:12px;">
-      My YouTube channel contains various videos of my systems in action.
+      </a>
     </div>
   </div>
 </section>
@@ -1649,152 +1896,223 @@
             <span class="code-dot yellow"></span>
             <span class="code-dot green"></span>
           </div>
-          <span class="code-label">Remotes.luau</span>
+          <span class="code-label">MatrixCalc.luau</span>
         </div>
         <div class="code-canvas">
-          <pre><code data-luau>--!strict
-
-local Players = game:GetService("Players")
-
-local Remotes = {}
-
-type PackedArgs = {
-	n: number,
-	[number]: any
+          <pre><code data-luau>--// made by It2kiui (@kiui_2810) 18/3/2026 11:46 PM
+ 
+local Math = {}
+Math.__index = Math
+ 
+--[[ -- Raw
+    {
+        1, 2, 5,
+        2, 9, 6,
+        8, 4, 2,
+    }
+]]
+ 
+--[[ -- Result
+    {
+        rows = {
+            [1] = {1, 2, 5}
+            [2] = {2, 9, 6}
+            [3] = {8, 4, 2}
+        }
+        columns = {
+            [1] = {1, 2, 8}
+            [2] = {2, 9, 4}
+            [3] = {5, 6, 2}
+        }
+    }
+]]
+ 
+type matrixType = typeof(Math) & {
+    rawTable: {},
+    matrixTable: {
+        rows: {},
+        columns: {},
+    },
+    rows: number,
+    columns : number,
 }
-
-type PlayerCalls = {
-	[Player]: { number }
-}
-
-type Callback = (Player, ...any) -> ()
-type Disconnect = () -> ()
-
-local traffic = setmetatable({} :: { [RemoteEvent]: PlayerCalls }, {
-	__mode = "k"
+ 
+local function _genrateMatrix(rows : number, columns : number, rawTable)
+    local matrix = {
+        rows = {},
+        columns = {},
+    }
+ 
+    for r = 1, rows do
+        local row = {}
+        for c = 1, columns do
+            local index = (r - 1) * columns + c
+            table.insert(row, rawTable[index])
+        end
+        matrix.rows[r] = row
+    end
+ 
+    for c = 1, columns do
+        local column = {}
+        for r = 1, rows do
+            table.insert(column, matrix.rows[r][c])
+        end
+        matrix.columns[c] = column
+    end
+ 
+    return matrix
+end
+ 
+function Math.new(rows : number, columns : number, rawTable)
+    local self : matrixType = setmetatable({}, Math)
+    
+    self.rows = rows
+    self.columns = columns
+    self.rawTable = rawTable
+    
+    local matrix = _genrateMatrix(rows, columns, rawTable)
+    self.matrixTable = matrix
+    
+    return self
+end
+ 
+----------------------------------------------
+---------------  PRIVATE  --------------------
+----------------------------------------------
+ 
+function Math._getRow(self: matrixType, index)
+    return self.matrixTable.rows[index]
+end
+ 
+function Math._getColumn(self: matrixType, index)
+    return self.matrixTable.columns[index]
+end
+ 
+function Math._toRawTable(self: matrixType)
+    local result = {}
+ 
+    for r = 1, self.rows do
+        for c = 1, self.columns do
+            table.insert(result, self.matrixTable.rows[r][c])
+        end
+    end
+ 
+    return result
+end
+ 
+function Math._inverse(self: matrixType) :: matrixType
+    local raw = self:_toRawTable()
+    local inverted = {}
+ 
+    for i = 1, #raw do
+        inverted[i] = -raw[i]
+    end
+ 
+    return Math.new(self.rows, self.columns, inverted)
+end
+ 
+----------------------------------------------
+---------------  PUBLIC  ---------------------
+----------------------------------------------
+ 
+function Math.addMatrices(self: matrixType, matrixObject: matrixType) :: matrixType
+    assert(
+        self.rows == matrixObject.rows and self.columns == matrixObject.columns,
+        "Matrices must have the same dimensions"
+    )
+    
+    local result = {}
+    
+    local rawTable1 = self:_toRawTable()
+    local rawTable2 = matrixObject:_toRawTable()
+    
+    for i = 1, #rawTable1 do
+        result[i] = rawTable1[i] + rawTable2[i]
+    end
+    
+    return Math.new(self.rows, self.columns, result)
+end
+ 
+function Math.subtractMatrices(self: matrixType, matrixObject: matrixType)
+    return self:addMatrices(matrixObject:_inverse())
+end
+ 
+function Math.multiplyMatrices(self: matrixType, matrixObject: matrixType) :: matrixType
+    assert(self.columns == matrixObject.rows, "Invalid dimensions for multiplication")
+ 
+    local result = {}
+ 
+    for r = 1, self.rows do
+        for c = 1, matrixObject.columns do
+            local sum = 0
+ 
+            for k = 1, self.columns do
+                sum += self.matrixTable.rows[r][k] * matrixObject.matrixTable.rows[k][c]
+            end
+ 
+            table.insert(result, sum)
+        end
+    end
+ 
+    return Math.new(self.rows, matrixObject.columns, result)
+end
+ 
+function Math.transpose(self: matrixType) :: matrixType
+    local result = {}
+ 
+    for c = 1, self.columns do
+        for r = 1, self.rows do
+            table.insert(result, self.matrixTable.rows[r][c])
+        end
+    end
+ 
+    return Math.new(self.columns, self.rows, result)
+end
+ 
+-- Made to print the matrix
+function Math.drawMatrix(self: matrixType)
+    for r = 1, self.rows do
+        local rowStr = ""
+ 
+        for c = 1, self.columns do
+            rowStr ..= tostring(self.matrixTable.rows[r][c]) .. "\t"
+        end
+ 
+        print("{    " .. rowStr .. "}")
+    end
+end
+ 
+return Math
+ 
+--------------------------------------
+-------- Client/Server sctipt --------
+--------------------------------------
+local matrix = require(path.to.module)
+ 
+local matrix1 = matrix.new(3, 3, {
+    1, 2, 3,
+    4, 5, 6,
+    7, 8, 9,
 })
-
-local function CheckArgs(args: PackedArgs, expected: { string }): boolean
-	if args.n ~= #expected then
-		return false
-	end
-
-	for i = 1, args.n do
-		local value = args[i]
-		local wanted = expected[i]
-		local got = typeof(value)
-
-		if got == wanted then
-			continue
-		end
-
-		if got == "Instance" and value:IsA(wanted) then
-			continue
-		end
-
-		return false
-	end
-
-	return true
-end
-
-Players.PlayerRemoving:Connect(function(player: Player)
-	for _, calls in traffic do
-		calls[player] = nil
-	end
-end)
-
-function Remotes.Wrap(remote: RemoteEvent,
-	expected: { string },
-	callback: Callback,
-	maxCalls: number?,
-	window: number?,
-	onLimitExceeded: ((Player) -> ())?
-): Disconnect
-	assert(not traffic[remote], "remote already wrapped: " .. remote.Name)
-
-	local limit = maxCalls or 5
-	local span = window or 1
-	assert(limit > 0, "maxCalls must be higher than 0")
-	assert(limit % 1 == 0, "maxCalls must be an integer")
-	assert(span > 0, "window must be higher than 0")
-	
-	local calls: PlayerCalls = {}
-	traffic[remote] = calls
-
-	local connection = remote.OnServerEvent:Connect(function(player: Player, ...: any)
-		if player.Parent ~= Players then
-			return
-		end
-
-		local now = os.clock()
-		local list = calls[player]
-
-		if not list then
-			list = {}
-			calls[player] = list
-		end
-
-		local oldCount = #list
-		local write = 1
-
-		for i = 1, oldCount do
-			local sentAt = list[i]
-
-			if now - sentAt < span then
-				list[write] = sentAt
-				write += 1
-			end
-		end
-
-		for i = write, oldCount do
-			list[i] = nil
-		end
-
-		local count = write - 1
-
-		if count >= limit then
-			if onLimitExceeded then
-				onLimitExceeded(player)
-			else
-				warn(player.Name .. " rate limited on " .. remote.Name)
-			end
-
-			return
-		end
-
-		count += 1
-		list[count] = now
-
-		local args = table.pack(...)
-
-		if not CheckArgs(args, expected) then
-			return
-		end
-
-		callback(player, table.unpack(args, 1, args.n))
-	end)
-
-	return function()
-		if connection.Connected then
-			connection:Disconnect()
-		end
-
-		traffic[remote] = nil
-		table.clear(calls)
-	end
-end
-
-return Remotes</code></pre>
+ 
+local matrix2 = matrix.new(3, 3, {
+    9, 8, 7,
+    6, 5, 4,
+    3, 2, 1,
+})
+ 
+local result = matrix1:addMatrices(matrix2)
+result:drawMatrix()</code></pre>
         </div>
       </div>
       <div class="snippet-commentary">
-        <h3>RemoteWrapper: Rate-Limited Remote Sanitizer</h3>
-        <p>A wrapper for every RemoteEvent in production. Handles type validation and rate limiting in one place; no repeated boilerplate across systems.</p>
+        <h3>MatrixCalc: Matrix Calculator</h3>
+        <p>A simple calculator. Handles (addition, subtraction, multiplication) for now.</p>
         <ul>
-          <li>Remotes.Wrap rejects calls that dont match the expected argument signature and blocks players who fire too fast. The rate limit window and call cap are configurable per-remote, with an optional onLimitExceeded callback for custom handling like kicks or telemetry.</li>
-          <li>Uses a sliding window for rate limiting; stale timestamps are swept on each fire, so counts always reflect the actual current window (no timers, no scheduled cleanup). PlayerRemoving handles memory automatically, and the weak keyed traffic table ensures that destroyed remotes don't leak.</li>
-          <li>The returned disconnect function is fully clean; listener disconnected, call table cleared, remote removed from the registry.</li>
+          <li>Developed as a personal project to simplify solving matrix-related school assignments and mathematical exercises.</li>
+          <li>Implements core matrix operations such as addition, subtraction, and multiplication using loops and structured logic.</li>
+          <li>Built entirely by me, while using Wikipedia and other mathematical resources for guidance on certain calculation methods.</li>
+          <li>This project also served as a great learning experience for improving my understanding of programming fundamentals and problem-solving techniques.</li>
         </ul>
       </div>
     </div>
@@ -1834,11 +2152,13 @@ return Remotes</code></pre>
 </section>
 
 <footer>
-  <div class="footer-logo"><span>Local</span> | Professional Roblox Scripter</div>
-  <div class="footer-note">full-stack // professional-grade // built to last</div>
+  <div class="footer-logo"><span>Kiui</span> | Professional Roblox Scripter</div>
+  <div class="footer-note">FullStack | ProfessionalGrade | Built To Last</div>
 </footer>
 
 <script>
+  console.log("Kiuis Portofilio is Lunching..");
+
   // SCROLL ANIMATIONS
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -1962,13 +2282,12 @@ return Remotes</code></pre>
   const rotatorMeasure = document.getElementById('rotator-measure');
 
   const phrases = [
-    'full game frameworks',
-    'clean production codebases',
-    'modular maintainable systems',
-    'front-page ready games',
-    'anti-exploit architecture',
-    'performance-first systems',
-    'professional-grade polish'
+    'Full Games Frameworks',
+    'Clean Production Codebases',
+    'Modular Maintainable Systems',
+    'FrontPage Ready Games',
+    'Anti-Exploit Architecture',
+    'Complex Mechanics For You Games'
   ];
   let idx = 0;
   let busy = false;
@@ -1999,6 +2318,66 @@ return Remotes</code></pre>
   document.fonts?.ready?.then(() => syncWidth(rotatorText.textContent));
   setInterval(rotate, 3000);
   window.addEventListener('resize', () => syncWidth(rotatorText.textContent));
+
+  
+(function () {
+  const layout    = document.querySelector('.proj-layout');
+  const panel     = document.getElementById('projVideoPanel');
+  const iframe    = document.getElementById('projIframe');
+  const pvTitle   = document.getElementById('pvTitle');
+  const pvMeta    = document.getElementById('pvMeta');
+  const pvNote    = document.getElementById('pvNote');
+  const pvLink    = document.getElementById('pvLink');
+  const closeBtn  = document.getElementById('projCloseBtn');
+
+  let currentRow  = null;
+
+  function openPanel(row) {
+    const ytId = row.dataset.yt;
+    const src  = `https://www.youtube-nocookie.com/embed/${ytId}?autoplay=1&rel=0&modestbranding=1`;
+
+    pvTitle.textContent  = row.dataset.title;
+    pvMeta.textContent   = row.dataset.meta;
+    pvNote.textContent   = row.dataset.note;
+    if (row.dataset.url) {
+      pvLink.href = row.dataset.url;
+      pvLink.style.display = 'inline-flex';
+    } else {
+      pvLink.style.display = 'none';
+    }
+
+    /* swap src only when different to avoid reloading the same video */
+    if (iframe.src !== src) iframe.src = src;
+
+    layout.classList.add('panel-open');
+
+    document.querySelectorAll('.proj-row').forEach(r => r.classList.remove('active'));
+    row.classList.add('active');
+    currentRow = row;
+  }
+
+  function closePanel() {
+    layout.classList.remove('panel-open');
+    iframe.src = '';                     /* stop playback */
+    document.querySelectorAll('.proj-row').forEach(r => r.classList.remove('active'));
+    currentRow = null;
+  }
+
+  document.querySelectorAll('.proj-row').forEach(row => {
+    row.addEventListener('click', () => {
+      if (row === currentRow && layout.classList.contains('panel-open')) {
+        closePanel();
+      } else {
+        openPanel(row);
+      }
+    });
+  });
+
+  closeBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    closePanel();
+  });
+})();
 </script>
 </body>
 </html>
